@@ -91,7 +91,7 @@ Flexible broadcast commands for announcements.
 
 Need custom skripts or plugins?
 
-👉 https://discord.com/users/YOUR_ID
+👉 https://discord.com/users/876238056275984435
 Or add: `qd_ducky`
 
 ---
