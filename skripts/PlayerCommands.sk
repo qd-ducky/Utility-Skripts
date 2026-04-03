@@ -1,0 +1,24 @@
+# ============================
+# Name: Basic player commands
+# Author: qd_ducky
+# Version: 1.0
+# Description: The 2 most basic commands a server needs
+# ============================
+
+command /discord:
+    aliases: /discord, /dc, /disc
+    trigger:
+        send "<link:https://discord.gg/YOURLINK>&7[&4Click Here&7] &aTo join our discord server!" to player    #Put you own discord link here!
+
+
+
+command /rules:
+    trigger:
+        send "&d&lServer Name ↓" to player     #Put you own server name here!
+        send "&d&l-> &5ɴᴏ ʜᴀᴄᴋɪɴɢ" to player 
+        send "&d&l-> &5ɴᴏ ᴇxᴘʟᴏɪᴛɪɴɢ!" to player 
+        send "&d&l-> &5ɴᴏ ᴄʜᴀᴛ ꜰʟᴏᴏᴅ!" to player 
+        send "&d&l-> &5ɴᴏ ᴅɪꜱᴄʀɪᴍɪɴᴀᴛɪᴏɴ!" to player 
+        send "&d&l-> &5ɴᴏ ꜱᴡᴇᴀʀɪɴɢ!" to player 
+        send "&d&l-> &5ɴᴏ ʀᴇꜰᴜꜱɪɴɢ ᴛᴏ ꜱᴄʀᴇᴇɴꜱʜᴀʀᴇ!" to player 
+        send "&d&l-> &5ʙᴇ ᴡʜᴏʟᴇꜱᴏᴍᴇ!" to player 
