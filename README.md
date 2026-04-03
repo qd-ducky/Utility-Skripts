@@ -57,13 +57,13 @@ Flexible broadcast commands for announcements.
 ### Individual Skripts
 
 * PlayerCommands:
-  👉 https://raw.githubusercontent.com/qd-ducky/Skript-Utilities/main/skripts/PlayerCommands.sk
+  👉 https://raw.githubusercontent.com/qd-ducky/Utility-Skripts/main/skripts/PlayerCommands.sk
 
 * ScreenShare:
-  👉 https://raw.githubusercontent.com/qd-ducky/Skript-Utilities/main/skripts/ScreenSharePcCheck.sk
+  👉 https://raw.githubusercontent.com/qd-ducky/Utility-Skripts/main/skripts/ScreenSharePcCheck.sk
 
 * Broadcast:
-  👉 https://raw.githubusercontent.com/qd-ducky/Skript-Utilities/main/skripts/Broadcast.sk
+  👉 https://raw.githubusercontent.com/qd-ducky/Utility-Skripts/main/skripts/Broadcast.sk
 
 ---
 
