@@ -1,0 +1,41 @@
+# ============================
+# Name: Advanced Broadcast skript
+# Author: qd_ducky
+# Version: 1.0
+# Description: Allows server owners to have a better and cleaner looking broadcast
+# ============================
+
+
+command /broadcast [<text>]:
+    aliases: /bc
+    permission: servername.broadcast      #Put you own server name here!
+    trigger:
+        if arg-1 is set:
+            play sound "entity.player.levelup" with volume 30 to all players
+			
+            broadcast "&l&8&m═══════════════════════════════════"  # top line
+            broadcast "&6&lSERVERNAME"            #Put you own server name here!
+            broadcast " "      # empty line
+            broadcast "&f%colored arg-1%"  # TEXT
+            broadcast "&l&8&m═══════════════════════════════════"  # bottom line
+			
+        else:
+            send "&c/broadcast (message)" to player
+
+
+command /bctittle [<text>]:
+    permission: servername.bctitle       #Put you own server name here!
+    trigger:
+        if arg-1 is set:
+            send title "&6&lSERVERNAME" with subtitle "%colored arg-1%" to all players        #Put you own server name here!
+
+            play sound "entity.player.levelup" with volume 30 to all players
+
+            broadcast "&l&8&m═══════════════════════════════════"
+            broadcast "&6&lSERVERNAME"         #Put you own server name here!
+            broadcast " "
+            broadcast "&f%colored arg-1%"
+            broadcast "&l&8&m═══════════════════════════════════"
+
+        else:
+            send "&cPlease type a message to broadcast" to player
