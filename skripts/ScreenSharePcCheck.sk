@@ -1,0 +1,45 @@
+# ============================
+# Name: ScreenSharing skript
+# Author: qd_ducky
+# Version: 1.0
+# Description: Allows server owners to check user's pcs for cheats while the players cant play
+# ============================
+
+command /screenshare <player>:
+    permission: ss.use
+    permission message: &cNo permission.
+    trigger:
+        if arg-1 is not set:
+            send "&cUsage: /screenshare <player>"
+            stop
+        if {ss::%arg-1%} is set:
+            send "&c%arg-1% is already being screenshared!"
+            stop
+        execute console command "untag %arg-1%"
+        execute console command "jail %arg-1% JAILNAME" #Put you own jail name here!
+        set {ss::%arg-1%} to true
+        send "&4You are being screenshared by staff!" to arg-1
+        execute console command "untag %player%"
+        wait 0.3 seconds
+        teleport player to arg-1
+        send "&aYou are now screensharing %arg-1%."
+
+
+command /release <player>:
+    permission: ss.release
+    permission message: &cNo permission.
+    trigger:
+        if arg-1 is not set:
+            send "&cUsage: /release <player>"
+            stop
+        if {ss::%arg-1%} is not set:
+            send "&c%arg-1% is not currently being screenshared!"
+            stop
+        execute console command "unjail %arg-1%"
+        delete {ss::%arg-1%}
+        send "&2You have been released!" to arg-1
+        send "&a%arg-1% has been released." to player
+        wait 0.3 seconds
+        teleport arg-1 to {spawn}
+        wait 0.3 seconds
+        teleport player to arg-1
