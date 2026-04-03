@@ -18,7 +18,7 @@ command /screenshare <player>:
         execute console command "untag %arg-1%"
         execute console command "jail %arg-1% JAILNAME" #Put you own jail name here!
         set {ss::%arg-1%} to true
-        send "&4You are being screenshared by staff!" to arg-1
+        send "&4You are being screenshared by staff!" to arg-1S
         execute console command "untag %player%"
         wait 0.3 seconds
         teleport player to arg-1
